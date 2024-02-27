@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+ overflow-y: auto;
+  color: rgb(var(--foreground-rgb));
+  background-image: url('https://cdn.wallpapersafari.com/93/34/TwDu2L.jpg');
+
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.main-card-div {
+  width: 100vw;
+  display: flex;
+  margin: 0; 
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.main-card-div:hover{
+  transition: width 2s, height 4s;
+
+}
+
+.image-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.image-name {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.h3{
+  text-align: center;
+  font-size: x-large;
+}
+
+.h3::first-letter {
+  font-size: 200%;
+  color: #8A2BE2;
+}
+
+
+input{
+  color: black;
+}
